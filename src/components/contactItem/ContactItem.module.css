@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 22px;
+}
+
+.li {
+  border: 1px solid #5c81c2;
+  position: relative;
+  border-radius: 8px;
+  padding: 6px 4px;
+  width: 328px;
+  height: 54px;
+}
+
+.name {
+  font: 600 14px "Montserrat", sans-serif;
+  text-transform: capitalize;
+  color: #001740;
+  flex: 1;
+}
+
+.infoDiv {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 3px;
+}
+
+.phone {
+  font: 500 12px "Montserrat", sans-serif;
+  color: #001740;
+}
+
+.birthday {
+  font: 500 12px "Montserrat", sans-serif;
+  text-transform: capitalize;
+  color: #495f80;
+}
+
+.infoIcon {
+  position: absolute;
+  bottom: 12px;
+  left: 4px;
+}
+
+.dotsIcon {
+  position: absolute;
+  right: 1px;
+  top: 4px;
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Іван Петренко",
+    "email": "ivan.petrenko@example.com",
+    "phone": "+380631231232",
+    "birthday": "11.02.1995",
+    "information": "Фронтенд-розробник, працює з React і TypeScript."
+  },
+  {
+    "name": "Марія Коваль",
+    "email": "maria.koval@example.com",
+    "phone": "+380671234567",
+    "birthday": "25.06.1998"
+  },
+  {
+    "name": "Олександр Бондаренко",
+    "email": "olexandr.bondarenko@example.com",
+    "phone": "+380991112233",
+    "birthday": "03.09.1990",
+    "information": "Захоплюється розробкою мобільних додатків."
+  },
+  {
+    "name": "Анна Шевченко",
+    "email": "anna.shevchenko@example.com",
+    "phone": "+380931234321",
+    "birthday": "17.12.1993"
+  },
+  {
+    "name": "Іван Петренко",
+    "email": "ivan.petrenko@example.com",
+    "phone": "+380631231232",
+    "birthday": "11.02.1995",
+    "information": "Фронтенд-розробник, працює з React і TypeScript."
+  },
+  {
+    "name": "Марія Коваль",
+    "email": "maria.koval@example.com",
+    "phone": "+380671234567",
+    "birthday": "25.06.1998"
+  },
+  {
+    "name": "Олександр Бондаренко",
+    "email": "olexandr.bondarenko@example.com",
+    "phone": "+380991112233",
+    "birthday": "03.09.1990",
+    "information": "Захоплюється розробкою мобільних додатків."
+  },
+  {
+    "name": "Анна Шевченко",
+    "email": "anna.shevchenko@example.com",
+    "phone": "+380931234321",
+    "birthday": "17.12.1993"
+  }
+]

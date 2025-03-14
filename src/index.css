@@ -12,7 +12,6 @@
 *::after {
   box-sizing: border-box;
 }
-
 * {
   margin: 0;
 }
@@ -20,6 +19,10 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+li {
+  list-style: none;
 }
 
 img,
@@ -67,4 +70,11 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.container {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
 }
