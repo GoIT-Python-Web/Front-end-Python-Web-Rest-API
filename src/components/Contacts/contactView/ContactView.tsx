@@ -4,7 +4,7 @@ import s from "./ContactView.module.css";
 import { BiInfoSquare } from "react-icons/bi";
 import { FaArrowLeft } from "react-icons/fa";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
-import { selectContacts } from "../../../store/contacts/selectors";
+import { selectContact } from "../../../store/contacts/selectors";
 import { clearItem } from "../../../store/contacts/slice";
 import {
   deleteContactById,
@@ -26,7 +26,7 @@ export default function ContactView() {
     }
   }, [dispatch, id]);
 
-  const contact = useAppSelector(selectContacts) ?? {};
+  const contact = useAppSelector(selectContact) ?? {};
 
   useEffect(() => {
     return () => {

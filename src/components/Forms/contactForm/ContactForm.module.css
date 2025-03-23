@@ -80,6 +80,7 @@
   font-size: 20px;
   color: #001740;
   text-align: center;
+  text-transform: none !important;
   background-color: inherit;
   border-bottom: 1px solid #1e1e1e;
 }

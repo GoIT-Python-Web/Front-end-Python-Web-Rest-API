@@ -32,6 +32,7 @@
   padding: 5px;
   cursor: pointer;
   width: 100px;
+  transition: all 0.2s ease;
   justify-content: center;
   align-items: center;
   flex: 1;
@@ -58,6 +59,18 @@
   height: 39px;
 }
 
+.cancel:hover {
+  background: #7caaff;
+  color: #fff;
+  border: none;
+}
+
+.cancel:active {
+  background: #17408e;
+  color: #fff;
+  border: none;
+}
+
 .delete {
   height: 39px;
 
@@ -68,6 +81,16 @@
   border: 1px solid #e5282b;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(255, 109, 109, 0.24);
+}
+
+.delete:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 109, 109, 0.24);
+  background: #e5282b;
+  color: #fff;
+}
+
+.delete:active {
+  background: #ba0d10;
 }
 
 @media screen and (min-width: 768px) {

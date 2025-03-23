@@ -22,9 +22,11 @@ export default function Header() {
     <>
       <div className={s.header}>
         <div className={s.div}>
+          <div className={s.picDiv}>
           <Link to="/user">
             <img src={userPic} alt="User picture" />
           </Link>
+          </div>
           <div className={s.userInfo}>
             <p className={s.name}>{user?.username ?? "Username"}</p>
             <p className={s.email}>{user?.email ?? "User email"}</p>

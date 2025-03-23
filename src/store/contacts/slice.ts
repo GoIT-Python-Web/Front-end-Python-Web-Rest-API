@@ -6,6 +6,7 @@ import {
   updateContactById,
   deleteContactById,
   fetchContactsByKeyword,
+  createContact,
 } from "./operations";
 import { handlePending, handleRejected } from "../init";
 
@@ -42,6 +43,19 @@ const contactsSlice = createSlice({
         state.error = null;
       })
       .addCase(fetchContacts.rejected, (state, action) => {
+        handleRejected(state, action);
+      })
+      .addCase(createContact.pending, (state) => {
+        handlePending(state);
+      })
+      .addCase(createContact.fulfilled, (state, action) => {
+        if (state.contacts) {
+          state.contacts.push(action.payload);
+        }
+        state.isLoading = false;
+        state.error = null;
+      })
+      .addCase(createContact.rejected, (state, action) => {
         handleRejected(state, action);
       })
       .addCase(fetchContactsByKeyword.pending, (state) => {
