@@ -1,0 +1,138 @@
+.picDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.absolute {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  top: -80px;
+  left: -50px;
+  color: black;
+  cursor: pointer;
+}
+
+.absolute > p {
+  font-weight: 500;
+  font-size: 13px;
+  color: #001740;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #001740;
+  text-align: center;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #526e96;
+}
+
+.data {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #001740;
+}
+
+.relative {
+  position: relative;
+  padding-top: 100px;
+}
+
+.pic {
+  border-radius: 100%;
+  margin-bottom: 11px;
+  width: 90px;
+  height: 90px;
+}
+
+.uploadIcon {
+  border-radius: 100%;
+  border: 1px solid #000;
+  padding: 5px;
+  background-color: pink;
+  color: #fff;
+  width: 29px;
+  height: 29px;
+  right: 60px;
+  top: 165px;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.invisible {
+  display: none;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .pic {
+    width: 140px;
+    height: 140px;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .uploadIcon {
+    right: 30px;
+    top: 200px;
+    width: 46px;
+    height: 46px;
+    padding: 10px;
+  }
+  .absolute {
+    gap: 10px;
+    top: 5px;
+    left: -225px;
+    color: black;
+    cursor: pointer;
+  }
+  .absolute > p {
+    font-size: 20px;
+  }
+  .arrow {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .pic {
+    width: 165px;
+    height: 165px;
+  }
+  .uploadIcon {
+    right: 30px;
+    top: 220px;
+    width: 46px;
+    height: 46px;
+    padding: 10px;
+  }
+  .absolute {
+    top: 5px;
+    left: -300px;
+  }
+}

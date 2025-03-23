@@ -1,0 +1,281 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 22px;
+}
+
+.li {
+  border: 1px solid #5c81c2;
+  position: relative;
+  border-radius: 8px;
+  padding: 6px 4px;
+  width: 328px;
+  height: 54px;
+}
+
+.name {
+  font: 600 14px "Montserrat", sans-serif;
+  text-transform: capitalize;
+  color: #001740;
+  flex: 1;
+}
+
+.infoDiv {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 3px;
+}
+
+.phone {
+  font: 500 12px "Montserrat", sans-serif;
+  color: #001740;
+  flex: 1;
+}
+
+.menuWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.menuButtons {
+  position: absolute;
+  right: -285px;
+  top: -20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 7px;
+  display: flex;
+  width: 150px;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+  z-index: 10;
+}
+
+.buttons {
+  display: none;
+}
+
+.birthday {
+  font: 500 12px "Montserrat", sans-serif;
+  text-transform: capitalize;
+  color: #495f80;
+  flex: 1;
+}
+
+.menuButton {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #003a9f;
+  border-radius: 10px;
+  padding: 6px;
+  width: 32px;
+  transition: all 0.2s ease;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  color: #003a9f;
+  transition: all 0.2s ease;
+}
+
+.infoIcon {
+  position: absolute;
+  bottom: 12px;
+  left: 4px;
+}
+
+.dotsIcon {
+  position: absolute;
+  cursor: pointer;
+  right: 1px;
+  top: 4px;
+}
+
+.menuButton:hover {
+  border: 1px solid #003a9f;
+  background: #114db5;
+}
+
+.menuButton:active {
+  background: #4888ff;
+}
+
+.menuButton:disabled {
+  border: 1px solid #525252;
+  background: #525252;
+}
+
+.menuButton:hover .icon,
+.menuButton:active .icon,
+.menuButton:disabled .icon {
+  color: #fff;
+}
+
+.menuButton:nth-child(3):hover {
+  background: #b51124;
+}
+.menuButton:nth-child(3):active {
+  background: #ba0d10;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin-left: 4px;
+    height: 100%;
+    width: 670px;
+    justify-content: space-around;
+  }
+
+  .li {
+    padding: 0px 4px;
+    width: 684px;
+    height: 42px;
+  }
+
+  .infoDiv {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 28px;
+    margin-left: 30px;
+  }
+
+  .phone,
+  .birthday {
+    font: 500 15px "Montserrat", sans-serif;
+    white-space: nowrap;
+    flex: 0;
+    color: #001740;
+  }
+
+  .dotsIcon {
+    display: none;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 12px;
+    margin-left: 28px;
+  }
+
+  .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .button {
+    border: 1px solid #003a9f;
+    border-radius: 10px;
+    padding: 6px;
+    width: 32px;
+    transition: all 0.2s ease;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    color: #003a9f;
+    transition: all 0.2s ease;
+  }
+
+  .button:hover {
+    border: 1px solid #003a9f;
+    background: #114db5;
+  }
+
+  .button:active {
+    background: #4888ff;
+  }
+
+  .button:disabled {
+    border: 1px solid #525252;
+    background: #525252;
+  }
+
+  .button:hover .icon,
+  .button:active .icon,
+  .button:disabled .icon {
+    color: #fff;
+  }
+
+  .button:nth-child(3):hover {
+    background: #b51124;
+  }
+  .button:nth-child(3):active {
+    background: #ba0d10;
+  }
+
+  .infoIcon {
+    position: absolute;
+    bottom: 10px;
+    left: 160px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .li {
+    width: 955px;
+    height: 52px;
+  }
+
+  .wrapper {
+    width: 940px;
+  }
+
+  .name {
+    font: 600 20px "Montserrat", sans-serif;
+  }
+
+  .infoDiv {
+    gap: 80px;
+    margin-left: 30px;
+  }
+
+  .buttons {
+    margin-left: 80px;
+  }
+
+  .infoIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .button {
+    border: 1px solid #003a9f;
+    border-radius: 10px;
+    padding: 6px;
+    width: 48px;
+    height: 44px;
+  }
+
+  .name {
+    flex: 0 0 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .infoIcon {
+    bottom: 12px;
+    left: 280px;
+  }
+}

@@ -12,14 +12,18 @@
 *::after {
   box-sizing: border-box;
 }
-
 * {
   margin: 0;
 }
 
 body {
   line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+li {
+  list-style: none;
 }
 
 img,
@@ -64,7 +68,36 @@ h6 {
   text-wrap: balance;
 }
 
+input {
+  outline: none;
+}
+
+ul {
+  padding: 0;
+}
+
 #root,
 #__next {
   isolation: isolate;
+}
+
+.container {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 0 64px;
+  }
 }

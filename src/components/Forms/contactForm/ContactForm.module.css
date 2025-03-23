@@ -1,0 +1,280 @@
+.wrapper {
+  height: 100vh;
+  margin-top: 74px;
+  position: relative;
+}
+
+.div {
+  border-radius: 16px;
+  padding: 16px 0px;
+  width: 328px;
+  background: linear-gradient(
+    90deg,
+    #f4f8fe 0%,
+    #ddebff 50%,
+    rgba(244, 248, 254, 1) 100%
+  );
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 320px;
+  padding-inline: 12px;
+}
+
+.div label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: capitalize;
+  text-align: center;
+  color: #526e96;
+}
+
+.inputContainer:nth-child(1) input {
+  width: 242px;
+  margin-inline: auto;
+  font-weight: 600;
+  color: #001740;
+}
+
+.inputContainer:nth-child(2) input {
+  padding-left: 90px;
+  text-align: start;
+}
+
+.inputContainer:nth-child(5) label {
+  text-align: left;
+}
+
+.absolute {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: black;
+  top: -50px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.absolute > p {
+  font-weight: 500;
+  font-size: 13px;
+  color: #001740;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer input {
+  padding: 6px 12px;
+  width: 304px;
+  height: 30px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: #001740;
+  text-align: center;
+  background-color: inherit;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  height: 120px;
+  border: 1px solid #e1e6f9;
+  border-radius: 8px;
+  background: #fafcff;
+  resize: none;
+  font-size: 14px;
+  color: #001740;
+}
+
+.saveBtn {
+  border: 1px solid #001740;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 14px 18px;
+  box-shadow: 0 4px 8px 0 rgba(212, 227, 255, 0.32);
+  background: #d7e5ff;
+  height: 56px;
+
+  font-weight: 500;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  color: #001740;
+}
+
+.saveBtn:hover {
+  background: #7caaff;
+  color: #fff;
+  border: none;
+}
+
+.saveBtn:active {
+  background: #17408e;
+  color: #fff;
+  border: none;
+}
+
+.infoDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: rgba(94, 130, 181, 0.65);
+}
+
+.delete {
+  display: block;
+  border: 1px solid #e5282b;
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(255, 109, 109, 0.24);
+  height: 56px;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-top: 16px;
+  color: #e5282b;
+}
+
+.delete:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 109, 109, 0.24);
+  background: #e5282b;
+  color: #fff;
+}
+
+.delete:active {
+  background: #ba0d10;
+}
+
+@media screen and (min-width: 768px) {
+  .div {
+    border-radius: 24px;
+    width: 704px;
+    padding: 100px;
+  }
+
+  .absolute > p {
+    font-size: 20px;
+  }
+
+  .absolute {
+    top: 15px;
+    left: 15px;
+  }
+
+  .form {
+    width: 503px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-inline: 0;
+  }
+
+  .div label {
+    text-align: left;
+  }
+
+  .inputContainer input {
+    text-align: start;
+  }
+
+  .inputContainer:nth-child(2) input {
+    padding-left: 10px;
+    text-align: start;
+  }
+
+  .inputContainer,
+  .inputContainer input {
+    width: 234px !important;
+  }
+  .inputContainer:nth-child(5) {
+    width: 500px !important;
+  }
+
+  .delete {
+    margin-top: 0;
+  }
+
+  .inputContainer:nth-child(1) input {
+    font-weight: 500;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 20px;
+    width: 503px;
+  }
+
+  textarea {
+    font-size: 16px;
+  }
+
+  .inputContainer input {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .div {
+    padding: 15px 72px;
+    width: 904px;
+    margin-inline: auto;
+    margin-top: 80px;
+  }
+
+  .absolute {
+    top: 15px;
+    left: 225px;
+  }
+
+  .form {
+    width: 632px;
+    column-gap: 164px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    margin-left: 70px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 80px;
+    width: 677px;
+  }
+
+  .delete {
+    height: 56px;
+  }
+
+  .infoDiv {
+    width: 632px;
+  }
+
+  textarea {
+    width: 632px;
+    height: 175px;
+  }
+}

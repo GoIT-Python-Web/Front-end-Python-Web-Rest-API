@@ -1,0 +1,45 @@
+.wrapper {
+  position: relative;
+}
+
+.icon {
+  color: #6e7684;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  rotate: 90deg;
+}
+
+.input {
+  border: 1px solid #526e96;
+  border-radius: 8px;
+  padding: 8px 12px;
+  padding-left: 50px;
+  width: 328px;
+  height: 40px;
+}
+
+.input::placeholder {
+  font: 400 10px "Montserrat", sans-serif;
+  color: #6e7684;
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    left: 12px;
+  }
+  .input {
+    width: 100%;
+    padding-left: 40px;
+  }
+  .input::placeholder {
+    font: 400 14px "Montserrat", sans-serif;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .input {
+    margin-bottom: 16px;
+  }
+}
