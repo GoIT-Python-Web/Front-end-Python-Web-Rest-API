@@ -1,0 +1,19 @@
+.div {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.img {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .img {
+    display: block;
+    width: 636px;
+    height: 636px;
+  }
+}

@@ -1,0 +1,7 @@
+@media screen and (min-width: 1440px) {
+  .div {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}

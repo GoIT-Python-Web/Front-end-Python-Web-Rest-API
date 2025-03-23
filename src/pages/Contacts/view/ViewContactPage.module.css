@@ -1,0 +1,32 @@
+.div {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 16px 0px;
+  width: 326px;
+  background: linear-gradient(
+    90deg,
+    #f4f8fe 0%,
+    #ddebff 50%,
+    rgba(244, 248, 254, 1) 100%
+  );
+}
+
+@media screen and (min-width: 768px) {
+  .div {
+    width: 704px;
+    padding: 86px 126px;
+    margin-block: 77px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .div {
+    padding: 0;
+    width: 1076px;
+    margin-inline: auto;
+  }
+}

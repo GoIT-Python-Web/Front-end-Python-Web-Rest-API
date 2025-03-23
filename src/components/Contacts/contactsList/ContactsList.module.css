@@ -1,0 +1,139 @@
+.list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-bottom: 30px;
+}
+
+.list li:nth-child(even) {
+  background: #dbe8ff;
+}
+
+.p {
+  display: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  transition: all 0.2s ease;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  background: #1f69d4;
+  border-radius: 10px;
+  padding: 6px;
+  padding-left: 20px;
+  width: 198px;
+  height: 53px;
+  text-align: center;
+}
+
+.link:hover {
+  background: #4c89f9;
+}
+
+.link:active {
+  background: #17408e;
+}
+.div p {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #345ca3;
+}
+
+.div {
+  display: flex;
+  padding-inline: 15px;
+  flex-direction: column;
+  gap: 32px;
+  height: 570px;
+  justify-content: center;
+  align-items: center;
+}
+
+.div > button {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  width: 198px;
+  height: 53px;
+  background: #1f69d4;
+  color: white;
+  font: 700 16px "Montserrat", sans-serif;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.div > button:hover {
+  background: #4c89f9;
+}
+
+.div > button:active {
+  background: #17408e;
+}
+
+.div > button:disabled {
+  background: transparent;
+  border: 1px solid #525252;
+  color: #525252;
+  cursor: not-allowed;
+}
+
+.plus {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    gap: 14px;
+    margin-bottom: 33px;
+    margin-top: 16px;
+    border: 1px solid rgba(0, 58, 159, 0.64);
+    border-radius: 8px;
+    padding: 10px;
+    width: 704px;
+    height: 100%;
+  }
+  .div {
+    padding-inline: 45px;
+  }
+
+  .div p {
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .list {
+    width: 975px;
+  }
+  .div {
+    width: 975px;
+  }
+  .div > p {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 132%;
+    text-transform: capitalize;
+    text-align: center;
+    color: #345ca3;
+  }
+  .p {
+    display: inline;
+
+    font-weight: 700;
+    font-size: 20px;
+    color: #001740;
+  }
+}

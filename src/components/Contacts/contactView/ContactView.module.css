@@ -1,0 +1,227 @@
+.name {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #001740;
+  margin-bottom: 30px;
+}
+
+.div {
+  position: relative;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #526e96;
+}
+
+.absolute {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: black;
+  top: -70px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.absolute > p {
+  font-weight: 500;
+  font-size: 13px;
+  color: #001740;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #001740;
+  margin-bottom: 24px;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textareaDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.icon {
+  fill: rgba(94, 130, 181, 0.65);
+  width: 18px;
+  height: 18px;
+}
+
+.textarea {
+  resize: none;
+  border: 1px solid #e1e6f9;
+  border-radius: 8px;
+  padding: 11px 0px;
+  width: 306px;
+  min-height: 120px;
+  background: #fafcff;
+
+  font-weight: 400;
+  font-size: 14px;
+  padding: 11px;
+  text-transform: capitalize;
+  color: #001740;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edit,
+.delete {
+  padding: 13px;
+  width: 296px;
+  height: 56px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(212, 227, 255, 0.32);
+}
+
+.edit {
+  border: 1px solid #001740;
+  background: #d7e5ff;
+  color: #001740;
+}
+
+.edit:hover {
+  background: #7caaff;
+  color: #fff;
+  border: none;
+}
+
+.edit:active {
+  background: #17408e;
+  color: #fff;
+  border: none;
+}
+
+.delete {
+  color: #e5282b;
+  border: 1px solid #e5282b;
+  background-color: transparent;
+}
+
+.delete:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 109, 109, 0.24);
+  background: #e5282b;
+  color: #fff;
+}
+
+.delete:active {
+  background: #ba0d10;
+}
+
+.infoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    font-size: 25px;
+  }
+  .infoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 452px;
+  }
+  .email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .email > .label {
+    margin-bottom: 16px;
+  }
+  .textarea {
+    width: 452px;
+    font-size: 16px;
+  }
+  .textareaDiv {
+    width: 452px;
+    margin-bottom: 15px;
+  }
+  .buttons > .edit,
+  .buttons > .delete {
+    width: 458px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  .absolute {
+    left: -100px;
+    top: -60px;
+  }
+  .absolute > p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .div:nth-child(1) {
+    padding-block: 99px;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .infoDiv {
+    width: 508px;
+  }
+  .textarea {
+    width: 508px;
+    margin-bottom: 58px;
+    height: 160px;
+  }
+  .textareaDiv {
+    width: 508px;
+    margin-bottom: 15px;
+  }
+  .buttons {
+    width: 739px;
+    flex-direction: row;
+    gap: 111px;
+  }
+  .edit,
+  .delete {
+    width: 314px;
+  }
+  .absolute {
+    left: -150px;
+    top: 15px;
+  }
+}

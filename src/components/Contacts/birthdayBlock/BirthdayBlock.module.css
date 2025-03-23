@@ -1,0 +1,111 @@
+.wrapper {
+  margin-bottom: 100px;
+}
+
+.heading {
+  font: 700 16px "Montserrat", sans-serif;
+  text-transform: capitalize;
+  color: #001740;
+}
+
+.paragraph,
+.today {
+  font: 400 14px "Montserrat", sans-serif;
+  text-transform: capitalize;
+  color: #001740;
+}
+
+.today {
+  font-weight: 600 !important;
+  margin-bottom: 16px;
+}
+
+.p {
+  font: 700 16px "Montserrat", sans-serif;
+  text-transform: capitalize;
+  margin-top: 16px;
+  padding-inline: 15px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #345ca3;
+}
+
+.dateDeskWrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin-bottom: 32px;
+  }
+  .p {
+    padding-top: 10px;
+    padding-inline: 94px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .heading {
+    font: 700 20px "Montserrat", sans-serif;
+  }
+  .paragraph,
+  .today {
+    font: 400 16px "Montserrat", sans-serif;
+  }
+
+  .headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-inline: 10px;
+    margin-bottom: 16px;
+  }
+
+  .dateWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+  }
+
+  .dateDeskWrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading {
+    margin-bottom: 10px;
+  }
+  .dateWrapper {
+    display: none;
+  }
+  .headerWrapper {
+    margin-inline: 0;
+  }
+  .dateDeskWrapper {
+    display: block;
+  }
+
+  .div {
+    border-left: 3px solid rgba(0, 58, 159, 0.64);
+    border-radius: 8px;
+    padding: 10px 8px;
+    width: 298px;
+    height: 71px;
+    box-shadow: 0 2px 8px 0 rgba(0, 58, 159, 0.24);
+    background: linear-gradient(
+      180deg,
+      #fff 98.51%,
+      rgba(0, 58, 159, 0.64) 100%
+    );
+  }
+  .p {
+    margin-top: -3px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #345ca3;
+    text-align: left;
+  }
+}

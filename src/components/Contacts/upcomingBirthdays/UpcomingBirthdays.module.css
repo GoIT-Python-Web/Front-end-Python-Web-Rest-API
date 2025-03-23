@@ -1,0 +1,99 @@
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.li {
+  border-left: 3px solid rgba(0, 58, 159, 0.64);
+  border-radius: 8px;
+  padding: 10px;
+  width: 328px;
+  height: 60px;
+  box-shadow: 0 2px 8px 0 rgba(0, 58, 159, 0.24);
+  background: linear-gradient(180deg, #fff 98.51%, rgba(0, 58, 159, 0.64) 100%);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name,
+.birthday {
+  font: 600 14px "Montserrat", sans-serif;
+  text-transform: capitalize;
+  color: #001740;
+}
+
+.birthday {
+  font: 500 14px "Montserrat", sans-serif;
+}
+
+.eye {
+  border: 1px solid #003a9f;
+  border-radius: 10px;
+  padding: 7px;
+  width: 40px;
+  transition: all 0.2s ease;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eyeIcon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  color: #003a9f;
+  transition: all 0.2s ease;
+}
+
+.eye:hover {
+  border: 1px solid #003a9f;
+  background: #114db5;
+}
+
+.eye:active {
+  background: #4888ff;
+}
+
+.eye:disabled {
+  border: 1px solid #525252;
+  background: #525252;
+}
+
+.eye:hover .eyeIcon,
+.eye:active .eyeIcon,
+.eye:disabled .eyeIcon {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-inline: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ul {
+    margin-inline: 0;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .li {
+    width: 306px;
+  }
+}
