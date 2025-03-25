@@ -3,7 +3,7 @@ import { uploadUserPhoto } from "../../../store/auth/operations";
 import { selectUser, selectUserPic } from "../../../store/auth/selectors";
 import { useState } from "react";
 import { FaArrowLeft } from "react-icons/fa6";
-import { FiUpload } from "react-icons/fi";
+import { TbEdit } from "react-icons/tb";
 import img from "../../../assets/images/icon.webp";
 import s from "./UserForm.module.css";
 import { useNavigate } from "react-router-dom";
@@ -16,13 +16,12 @@ export default function UserForm() {
   const user = useAppSelector(selectUser);
   const userPic = useAppSelector(selectUserPic) ?? img;
 
-  const [file, setFile] = useState<File | null>(null);
+  const setFile = useState<File | null>(null)[1];
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
     if (selectedFile) {
       setFile(selectedFile);
-      console.log(file);
       dispatch(uploadUserPhoto({ file: selectedFile }));
     }
   };
@@ -34,7 +33,9 @@ export default function UserForm() {
         <p>Назад</p>
       </div>
       <label htmlFor="file-input">
-        <FiUpload size={24} className={s.uploadIcon} />
+        <div className={s.ts}>
+          <TbEdit size={24} className={s.uploadIcon} />
+        </div>
       </label>
       <input
         id="file-input"

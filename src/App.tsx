@@ -30,7 +30,7 @@ export default function App() {
 
   return (
     <div className="container">
-      {isLoading && location.pathname !== "/" && <Loader />}
+      {isLoading && <Loader />}
       <Routes>
         <Route
           path="/register"

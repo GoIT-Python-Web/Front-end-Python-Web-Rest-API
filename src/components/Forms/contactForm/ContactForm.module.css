@@ -60,6 +60,13 @@
   cursor: pointer;
 }
 
+.error {
+  display: flex;
+  justify-content: center;
+  color: red;
+  margin-top: 10px;
+}
+
 .absolute > p {
   font-weight: 500;
   font-size: 13px;

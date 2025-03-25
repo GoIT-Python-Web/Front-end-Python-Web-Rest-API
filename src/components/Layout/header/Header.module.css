@@ -18,6 +18,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .p1,
@@ -139,6 +140,7 @@ button:active {
   }
 
   .button {
+    width: 234px;
     padding: 16px;
   }
 }

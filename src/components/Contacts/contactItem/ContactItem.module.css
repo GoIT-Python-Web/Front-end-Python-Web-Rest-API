@@ -176,6 +176,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 140px;
   }
 
   .button {
@@ -244,6 +245,11 @@
 
   .name {
     font: 600 20px "Montserrat", sans-serif;
+    max-width: 260px;
+  }
+
+  .phone {
+    max-width: 100px;
   }
 
   .infoDiv {

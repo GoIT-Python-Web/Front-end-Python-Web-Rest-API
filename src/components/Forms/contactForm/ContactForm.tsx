@@ -18,6 +18,10 @@ import { selectContact } from "../../../store/contacts/selectors";
 import { clearItem } from "../../../store/contacts/slice";
 import DeletePopUp from "../../UI/popup/DeletePopUp";
 import { FaArrowLeft } from "react-icons/fa";
+import {
+  createContactValidationSchema,
+  editContactValidationSchema,
+} from "../../../validation/schemas";
 
 export default function ContactForm() {
   const dispatch = useAppDispatch();
@@ -99,6 +103,11 @@ export default function ContactForm() {
         <Formik
           initialValues={initialValues}
           enableReinitialize
+          validationSchema={
+            isEditMode
+              ? editContactValidationSchema
+              : createContactValidationSchema
+          }
           onSubmit={handleSubmit}
         >
           {({ setFieldValue }) => (

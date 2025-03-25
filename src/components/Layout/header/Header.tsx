@@ -1,31 +1,24 @@
-import {
-  selectIsRefreshing,
-  selectUser,
-  selectUserPic,
-} from "../../../store/auth/selectors";
+import { selectUser, selectUserPic } from "../../../store/auth/selectors";
 import { useAppSelector } from "../../../store/hooks";
 import { FaPlus } from "react-icons/fa6";
 import s from "./Header.module.css";
 import img from "../../../assets/images/icon.webp";
 import { selectContacts } from "../../../store/contacts/selectors";
 import { Link } from "react-router-dom";
-import Loader from "../../UI/loader/Loader";
 
 export default function Header() {
   const user = useAppSelector(selectUser);
-  const isLoading = useAppSelector(selectIsRefreshing);
   const userPic = useAppSelector(selectUserPic) ?? img;
 
   const contacts = useAppSelector(selectContacts) ?? [];
-  if (isLoading) return <Loader />;
   return (
     <>
       <div className={s.header}>
         <div className={s.div}>
           <div className={s.picDiv}>
-          <Link to="/user">
-            <img src={userPic} alt="User picture" />
-          </Link>
+            <Link to="/user">
+              <img src={userPic} alt="User picture" />
+            </Link>
           </div>
           <div className={s.userInfo}>
             <p className={s.name}>{user?.username ?? "Username"}</p>

@@ -1,5 +1,5 @@
 import s from "./ContactItem.module.css";
-import { BiInfoSquare } from "react-icons/bi";
+import { TbInfoSquare } from "react-icons/tb";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { formatDate } from "../../../helpers/formatDate.js";
 import { RxEyeOpen } from "react-icons/rx";
@@ -46,7 +46,7 @@ export default function ContactItem({ contact }: ContactItemProps) {
   return (
     <li className={s.li}>
       <div className={s.wrapper}>
-        {contact.description && <BiInfoSquare className={s.infoIcon} />}
+        {contact.description && <TbInfoSquare className={s.infoIcon} />}
         <BsThreeDotsVertical
           className={s.dotsIcon}
           onClick={() => setIsOpen(!isOpen)}

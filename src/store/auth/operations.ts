@@ -8,7 +8,6 @@ export const registerUser = createAsyncThunk<
   { username: string; email: string; password: string }
 >("users/signup", async (credentials, { rejectWithValue }) => {
   try {
-    console.log(credentials);
     const res = await instance.post("register", credentials);
     return res.data.user;
   } catch (e) {

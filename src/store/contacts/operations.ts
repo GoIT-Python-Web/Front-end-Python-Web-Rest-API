@@ -30,12 +30,10 @@ export const fetchContactsByKeyword = createAsyncThunk<
       const state = getState() as RootState;
       const token = state.auth.token;
       if (!token) throw new Error("User is not authenticated");
-
       const { data } = await instance.get("contacts/search", {
         headers: { Authorization: `Bearer ${token}` },
         params: { query: keyword },
       });
-
       return data;
     } catch (e) {
       return rejectWithValue(handleError(e, "Failed to fetch contacts"));

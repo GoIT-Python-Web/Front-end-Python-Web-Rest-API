@@ -34,9 +34,6 @@ const contactsSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchContacts.pending, (state) => {
-        handlePending(state);
-      })
       .addCase(fetchContacts.fulfilled, (state, action) => {
         state.contacts = action.payload;
         state.isLoading = false;
@@ -57,9 +54,6 @@ const contactsSlice = createSlice({
       })
       .addCase(createContact.rejected, (state, action) => {
         handleRejected(state, action);
-      })
-      .addCase(fetchContactsByKeyword.pending, (state) => {
-        handlePending(state);
       })
       .addCase(fetchContactsByKeyword.fulfilled, (state, action) => {
         state.contacts = action.payload;
